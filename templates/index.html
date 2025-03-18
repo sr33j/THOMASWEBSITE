@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Thomas the Tank Engine Fan Site</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Thomas the Tank Engine Fan Page!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About Thomas</h2>
+            <p>Thomas the Tank Engine is a fictional steam locomotive in The Railway Series books by the Reverend Wilbert Awdry and his son, Christopher Awdry.</p>
+        </section>
+        <section>
+            <h2>Gallery</h2>
+            <img src="{{ url_for('static', filename='thomas.jpg') }}" alt="Thomas the Tank Engine" />
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Thomas Fan Page</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
